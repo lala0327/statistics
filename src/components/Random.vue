@@ -7,7 +7,7 @@
     class="px-[35px] text-[32px] my-[30px]"
     @click="getRandom"
     title="Click"
-  />  
+  />
   <p v-if="random">你的隨機數為：{{ random }}</p>
 </template>
 <script>

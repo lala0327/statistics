@@ -48,16 +48,9 @@ const routes = [
   }
 ]
 const router = createRouter({
-  // history: createWebHistory('/statistics/'),
-  // routes,
-  // mode: 'history',
-  history: createWebHashHistory(),
-  base: '/statistics/'
+  history: createWebHistory('/statistics/'),
+  routes,
+
 })
 export default router;
 
-// if(sessionStorage.getItem('permission')) {
-//   let routerData = routeConfig();
-//   routerData.routes.forEach(route => router.options.routes.push(route));
-//   router.addRoutes(routerData.routes);
-// }

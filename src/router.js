@@ -54,9 +54,3 @@ const router = createRouter({
   base: '/statistics/'
 })
 export default router;
-
-// if(sessionStorage.getItem('permission')) {
-//   let routerData = routeConfig();
-//   routerData.routes.forEach(route => router.options.routes.push(route));
-//   router.addRoutes(routerData.routes);
-// }

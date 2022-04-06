@@ -45,16 +45,19 @@ const routes = [
     path: '/NBSimulation',
     name: 'NBSimulation',
     component: () => import("./components/NBSimulation.vue")
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    redirect: '/',
   }
 ]
 const router = createRouter({
-  history: createWebHistory('/statistics/'),
-  routes,
+  // history: createWebHistory('/statistics/'),
+  // routes,
+  // mode: 'history',
   mode: 'hash',
   base: '/statistics/'
 })
 export default router;
+
+// if(sessionStorage.getItem('permission')) {
+//   let routerData = routeConfig();
+//   routerData.routes.forEach(route => router.options.routes.push(route));
+//   router.addRoutes(routerData.routes);
+// }

@@ -51,7 +51,7 @@ const router = createRouter({
   // history: createWebHistory('/statistics/'),
   // routes,
   // mode: 'history',
-  mode: 'hash',
+  history: createWebHashHistory(),
   base: '/statistics/'
 })
 export default router;
